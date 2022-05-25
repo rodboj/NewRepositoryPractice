@@ -1,0 +1,26 @@
+name: First workflow
+
+on:
+	push:
+		branches: [main]
+	pull request:
+		branches: [main]
+
+jobs:
+	build:
+		runs-on: ubuntu-lastest
+
+		steps:
+			name: checkout branch
+			users: actions/checkout@v3
+
+			name: ejeutar script de una ;inea
+			run: echo Hello World
+
+			name: ejeutar multiinea
+			run: |
+
+	echo add other actions to the build
+	echo test, and deploy your project
+
+
